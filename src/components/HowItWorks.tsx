@@ -10,16 +10,16 @@ export function HowItWorks() {
     <section id="how-it-works" className="bg-background py-12">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">How it works</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-4">
+        <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-0">
           {steps.map((step, i) => (
-            <div key={step.num} className="relative text-center">
+            <div key={step.num} className="relative flex flex-1 flex-col items-center text-center">
               {i < steps.length - 1 && (
-                <div className="absolute right-0 top-8 hidden h-px w-full translate-x-1/2 bg-border md:block" />
+                <div className="absolute left-[calc(50%+2rem)] top-6 hidden h-px w-[calc(100%-4rem)] bg-border md:block" />
               )}
-              <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-sage/10">
+              <div className="relative mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-sage/10">
                 <span className="text-lg font-bold text-sage">{step.num}</span>
               </div>
-              <h3 className="mt-5 text-base font-semibold text-charcoal">{step.title}</h3>
+              <h3 className="mt-3 text-sm font-semibold text-charcoal">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.text}</p>
             </div>
           ))}
