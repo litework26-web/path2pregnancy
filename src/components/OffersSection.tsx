@@ -54,25 +54,25 @@ const offers = [
 
 export function OffersSection() {
   return (
-    <section className="bg-accent/30 py-20">
+    <section id="offers" className="bg-accent/30 py-14">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Choose your starting point</h2>
-        <div className="mt-14 grid gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {offers.map((offer) => (
             <div
               key={offer.title}
               className={`relative flex flex-col rounded-2xl border p-8 transition-shadow hover:shadow-xl ${
                 offer.featured
-                  ? "border-terracotta/40 bg-urgency-bg text-urgency-foreground shadow-xl"
+                  ? "border-terracotta/30 bg-rose-accent/10 shadow-xl ring-1 ring-terracotta/20"
                   : "border-border bg-card"
               }`}
             >
               {offer.featured && (
-                <div className="absolute -top-3 left-6 flex items-center gap-1 rounded-full bg-terracotta px-4 py-1 text-xs font-semibold text-terracotta-foreground">
+                <div className="absolute -top-3 left-6 flex items-center gap-1 rounded-full bg-terracotta px-4 py-1 text-xs font-semibold text-white">
                   <Star className="h-3 w-3" /> Most Private
                 </div>
               )}
-              <h3 className={`text-xl font-bold ${offer.featured ? "text-urgency-foreground" : "text-charcoal"}`}>
+              <h3 className="text-xl font-bold text-charcoal">
                 {offer.title}
               </h3>
               <p className={`mt-3 text-2xl font-bold ${offer.featured ? "text-terracotta" : "text-terracotta"}`}>
@@ -81,7 +81,7 @@ export function OffersSection() {
               {offer.priceSub && (
                 <p className="mt-1 text-xs text-muted-foreground">{offer.priceSub}</p>
               )}
-              <p className={`mt-4 text-sm leading-relaxed ${offer.featured ? "opacity-80" : "text-muted-foreground"}`}>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 {offer.description}
               </p>
               <ul className="mt-6 flex-1 space-y-3">
@@ -101,6 +101,9 @@ export function OffersSection() {
               </Button>
             </div>
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Button variant="cta" size="xl">Book the Baseline Audit</Button>
         </div>
       </div>
     </section>

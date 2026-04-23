@@ -11,13 +11,13 @@ const tiles = [
 
 export function WhatWeAddress() {
   return (
-    <section className="bg-accent/30 py-20">
+    <section className="bg-accent/30 py-12">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">What we address</h2>
         <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
           We focus on the biggest inputs affecting conception readiness.
         </p>
-        <div className="mt-14 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-8 grid grid-cols-3 gap-4 md:grid-cols-6">
           {tiles.map((tile) => (
             <div key={tile.label} className="flex flex-col items-center rounded-xl border border-border bg-card p-6 text-center transition-shadow hover:shadow-md">
               <tile.icon className="h-8 w-8 text-olive" />

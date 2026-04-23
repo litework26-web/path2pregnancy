@@ -7,10 +7,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="bg-background py-20">
+    <section id="how-it-works" className="bg-background py-12">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">How it works</h2>
-        <div className="mt-14 grid gap-8 md:grid-cols-4">
+        <div className="mt-8 grid gap-6 md:grid-cols-4">
           {steps.map((step, i) => (
             <div key={step.num} className="relative text-center">
               {i < steps.length - 1 && (

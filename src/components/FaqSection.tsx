@@ -10,10 +10,10 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section className="bg-background py-20">
+    <section id="faq" className="bg-background py-12">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Frequently asked questions</h2>
-        <Accordion type="single" collapsible className="mt-12">
+        <Accordion type="single" collapsible className="mt-8">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border-border">
               <AccordionTrigger className="text-left text-base font-medium text-charcoal hover:no-underline">
