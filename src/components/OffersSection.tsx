@@ -54,7 +54,7 @@ const offers = [
 
 export function OffersSection() {
   return (
-    <section className="bg-accent/30 py-20">
+    <section id="offers" className="bg-accent/30 py-14">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Choose your starting point</h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-3">

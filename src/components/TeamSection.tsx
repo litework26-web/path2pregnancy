@@ -18,7 +18,7 @@ const team = [
 
 export function TeamSection() {
   return (
-    <section className="bg-background py-20">
+    <section id="team" className="bg-background py-12">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Meet your team</h2>
         <div className="mx-auto mt-10 grid max-w-3xl gap-8 md:grid-cols-2">
