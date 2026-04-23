@@ -2,25 +2,42 @@ import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Fertility Reset — Maximize Your Chances of Getting Pregnant Naturally" },
+      { name: "description", content: "A personalized fertility reset focused on detoxification, nutrition, supplements, lifestyle, and conception readiness. Start with the Baseline Audit." },
+      { property: "og:title", content: "Fertility Reset — Maximize Your Chances of Getting Pregnant Naturally" },
+      { property: "og:description", content: "A personalized fertility reset focused on detoxification, nutrition, supplements, lifestyle, and conception readiness." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { HeroSection } from "@/components/HeroSection";
+import { UrgencySection } from "@/components/UrgencySection";
+import { WhoSection } from "@/components/WhoSection";
+import { WhatWeAddress } from "@/components/WhatWeAddress";
+import { HowItWorks } from "@/components/HowItWorks";
+import { OffersSection } from "@/components/OffersSection";
+import { TeamSection } from "@/components/TeamSection";
+import { WhyItWorks } from "@/components/WhyItWorks";
+import { FaqSection } from "@/components/FaqSection";
+import { FinalCta } from "@/components/FinalCta";
+import { FooterDisclaimer } from "@/components/FooterDisclaimer";
 
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <HeroSection />
+      <UrgencySection />
+      <WhoSection />
+      <WhatWeAddress />
+      <HowItWorks />
+      <OffersSection />
+      <TeamSection />
+      <WhyItWorks />
+      <FaqSection />
+      <FinalCta />
+      <FooterDisclaimer />
+    </>
+  );
 }
