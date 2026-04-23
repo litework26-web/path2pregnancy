@@ -102,6 +102,9 @@ export function OffersSection() {
               >
                 {offer.cta}
               </Button>
+              {offer.ctaNote && (
+                <p className="mt-2 text-center text-xs text-muted-foreground">{offer.ctaNote}</p>
+              )}
             </div>
           ))}
         </div>
