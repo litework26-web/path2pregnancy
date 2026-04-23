@@ -5,13 +5,13 @@ const team = [
   {
     name: "Abby",
     image: abbyImg,
-    bio: "Founder and lead strategist behind the fertility reset process. Abby focuses on identifying what may be lowering conception readiness and building the detoxification, nutrition, supplement, and lifestyle plan to optimize the body for pregnancy.",
-    large: true,
+    bio: "BIO",
+    large: false,
   },
   {
     name: "Tom",
     image: tomImg,
-    bio: "Tom leads the deeper support side of the process, helping clients stay consistent, emotionally steady, and on track through the ups and downs of trying to conceive.",
+    bio: "BIO",
     large: false,
   },
 ];
@@ -21,7 +21,7 @@ export function TeamSection() {
     <section className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Meet your team</h2>
-        <div className="mx-auto mt-14 grid max-w-4xl gap-10 md:grid-cols-2">
+        <div className="mx-auto mt-10 grid max-w-3xl gap-8 md:grid-cols-2">
           {team.map((member) => (
             <div key={member.name} className="flex flex-col items-center rounded-2xl border border-border bg-card p-8 text-center shadow-sm">
               <img
@@ -30,7 +30,7 @@ export function TeamSection() {
                 loading="lazy"
                 width={640}
                 height={800}
-                className={`rounded-xl object-cover shadow-md ${member.large ? "h-72 w-56" : "h-64 w-48"}`}
+              className="h-56 w-44 rounded-xl object-cover shadow-md"
               />
               <h3 className="mt-6 text-xl font-bold text-charcoal">{member.name}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
