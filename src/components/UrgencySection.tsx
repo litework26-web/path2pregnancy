@@ -22,17 +22,17 @@ const babyRisks = [
 
 export function UrgencySection() {
   return (
-    <section className="bg-urgency-bg py-20 text-urgency-foreground">
+    <section className="bg-urgency-bg py-14 text-urgency-foreground">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold lg:text-4xl">Your baseline before pregnancy matters</h2>
+          <h2 className="text-2xl font-bold lg:text-3xl">Your baseline before pregnancy matters</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg opacity-80">
             Poor preconception health can affect both pregnancy outcomes and baby health.
           </p>
         </div>
 
         {/* Stat cards */}
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-3">
           {stats.map((stat) => (
             <div key={stat.number} className="rounded-xl border border-urgency-foreground/10 bg-urgency-foreground/5 p-8 text-center">
               <p className="text-5xl font-bold text-terracotta">{stat.number}</p>
@@ -43,7 +43,7 @@ export function UrgencySection() {
         </div>
 
         {/* Risk grid */}
-        <div className="mt-14 grid gap-8 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div>
             <h3 className="mb-6 text-center text-xl font-semibold text-rose-accent">Pregnancy risks</h3>
             <div className="grid grid-cols-2 gap-4">
@@ -68,7 +68,7 @@ export function UrgencySection() {
           </div>
         </div>
 
-        <p className="mx-auto mt-12 max-w-3xl text-center text-sm leading-relaxed opacity-70">
+        <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed opacity-70">
           Good prepregnancy care can reduce avoidable risks and improve the chances of a healthier pregnancy journey. ACOG notes that prepregnancy health affects outcomes including preeclampsia, gestational diabetes, preterm birth, and other complications.
         </p>
       </div>
