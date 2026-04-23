@@ -16,6 +16,7 @@ const offers = [
       "Next-step recommendation",
     ],
     cta: "Book the Baseline Audit",
+    ctaNote: null,
     featured: false,
   },
   {
@@ -31,7 +32,8 @@ const offers = [
       "Messaging support",
       "Personalized action steps",
     ],
-    cta: "Apply for the Accelerator",
+    cta: "Book the Baseline Audit First",
+    ctaNote: "Baseline Audit required before starting",
     featured: false,
   },
   {
@@ -47,7 +49,8 @@ const offers = [
       "Partner and emotional support",
       "Clear next-step planning",
     ],
-    cta: "Apply for Concierge",
+    cta: "Book the Baseline Audit First",
+    ctaNote: "Baseline Audit required before starting",
     featured: true,
   },
 ];
@@ -99,11 +102,11 @@ export function OffersSection() {
               >
                 {offer.cta}
               </Button>
+              {offer.ctaNote && (
+                <p className="mt-2 text-center text-xs text-muted-foreground">{offer.ctaNote}</p>
+              )}
             </div>
           ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Button variant="cta" size="xl">Book the Baseline Audit</Button>
         </div>
       </div>
     </section>
