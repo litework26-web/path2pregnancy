@@ -6,7 +6,8 @@ const offers = [
     title: "Fertility Reset & Conception Baseline",
     price: "$150",
     priceSub: null,
-    description: "A 1:1 baseline audit designed to identify what may be lowering conception readiness and what needs to be fixed first.",
+    description:
+      "A 1:1 baseline audit designed to identify what may be lowering conception readiness and what needs to be fixed first.",
     items: [
       "Cycle and timing review",
       "Lifestyle and nutrition review",
@@ -23,7 +24,8 @@ const offers = [
     title: "90-Day Conception Accelerator",
     price: "Starting from $1,800",
     priceSub: "Weekly path available from $2,400",
-    description: "A structured 90-day fertility reset designed to improve conception readiness through nutrition, supplements, detoxification, cycle timing, and lifestyle optimization.",
+    description:
+      "A structured 90-day fertility reset designed to improve conception readiness through nutrition, supplements, detoxification, cycle timing, and lifestyle optimization.",
     items: [
       "Cycle-by-cycle optimization",
       "Structured checkpoints",
@@ -40,7 +42,8 @@ const offers = [
     title: "Concierge Conception Program",
     price: "6 months from $6,000",
     priceSub: null,
-    description: "A higher-touch fertility path for women who want closer guidance, priority access, deeper strategy, and support across multiple cycles.",
+    description:
+      "A higher-touch fertility path for women who want closer guidance, priority access, deeper strategy, and support across multiple cycles.",
     items: [
       "Priority support",
       "Closer protocol adjustments",
@@ -59,7 +62,9 @@ export function OffersSection() {
   return (
     <section id="offers" className="bg-accent/30 py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">Choose your starting point</h2>
+        <h2 className="text-center text-3xl font-bold text-charcoal lg:text-4xl">
+          Choose your starting point
+        </h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {offers.map((offer) => (
             <div
@@ -75,10 +80,10 @@ export function OffersSection() {
                   <Star className="h-3 w-3" /> Most Private
                 </div>
               )}
-              <h3 className="text-xl font-bold text-charcoal">
-                {offer.title}
-              </h3>
-              <p className={`mt-3 text-2xl font-bold ${offer.featured ? "text-terracotta" : "text-terracotta"}`}>
+              <h3 className="text-xl font-bold text-charcoal">{offer.title}</h3>
+              <p
+                className={`mt-3 text-2xl font-bold ${offer.featured ? "text-terracotta" : "text-terracotta"}`}
+              >
                 {offer.price}
               </p>
               {offer.priceSub && (
@@ -90,16 +95,14 @@ export function OffersSection() {
               <ul className="mt-6 flex-1 space-y-3">
                 {offer.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm">
-                    <Check className={`mt-0.5 h-4 w-4 shrink-0 ${offer.featured ? "text-terracotta" : "text-sage"}`} />
+                    <Check
+                      className={`mt-0.5 h-4 w-4 shrink-0 ${offer.featured ? "text-terracotta" : "text-sage"}`}
+                    />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <Button
-                variant={offer.featured ? "cta" : "cta"}
-                size="xl"
-                className="mt-8 w-full"
-              >
+              <Button variant={offer.featured ? "cta" : "cta"} size="xl" className="mt-8 w-full">
                 {offer.cta}
               </Button>
               {offer.ctaNote && (
