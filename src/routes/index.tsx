@@ -29,7 +29,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { OffersSection } from "@/components/OffersSection";
 import { TeamSection } from "@/components/TeamSection";
 import { WhyItWorks } from "@/components/WhyItWorks";
-import { FaqSection } from "@/components/FaqSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FinalCta } from "@/components/FinalCta";
 import { FooterDisclaimer } from "@/components/FooterDisclaimer";
 
@@ -45,7 +45,7 @@ function Index() {
       <OffersSection />
       <TeamSection />
       <WhyItWorks />
-      <FaqSection />
+      <TestimonialsSection />
       <FinalCta />
       <FooterDisclaimer />
     </>
