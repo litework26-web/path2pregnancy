@@ -16,7 +16,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-terracotta text-terracotta-foreground shadow-lg hover:bg-terracotta/90 font-semibold tracking-wide",
+        cta: "bg-terracotta text-terracotta-foreground shadow-lg hover:bg-rose-hover font-semibold tracking-wide",
         ctaOutline: "border-2 border-terracotta text-charcoal hover:bg-terracotta/10 font-semibold tracking-wide",
         sage: "bg-sage text-sage-foreground shadow hover:bg-sage/90 font-semibold",
       },
