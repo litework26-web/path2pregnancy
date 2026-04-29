@@ -67,7 +67,7 @@ function BookPage() {
               className="mt-2 bg-background"
             />
             {error && <p className="mt-2 text-sm font-medium text-destructive">{error}</p>}
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
               <Button type="button" variant="cta" size="xl" onClick={bookWithPromoCode}>
                 Apply Code & Book
               </Button>
