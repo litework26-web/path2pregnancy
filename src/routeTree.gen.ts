@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as FertilityCrisisRouteImport } from './routes/fertility-crisis'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 
 const FertilityCrisisRoute = FertilityCrisisRouteImport.update({
   id: '/fertility-crisis',
   path: '/fertility-crisis',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/fertility-crisis'
+  fullPaths: '/' | '/contact' | '/fertility-crisis'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/fertility-crisis'
-  id: '__root__' | '/' | '/fertility-crisis'
+  to: '/' | '/contact' | '/fertility-crisis'
+  id: '__root__' | '/' | '/contact' | '/fertility-crisis'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
   FertilityCrisisRoute: typeof FertilityCrisisRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/fertility-crisis'
       fullPath: '/fertility-crisis'
       preLoaderRoute: typeof FertilityCrisisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
   FertilityCrisisRoute: FertilityCrisisRoute,
 }
 export const routeTree = rootRouteImport
