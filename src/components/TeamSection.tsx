@@ -5,13 +5,13 @@ const team = [
   {
     name: "Abby",
     image: abbyImg,
-    bio: "Abby is a biomedical engineering student, yoga and fitness teacher, and nutrition expert focused on helping women prepare their bodies for pregnancy. Her work centers on detoxification, nourishment, movement, and the lifestyle habits that support conception and a healthier pregnancy journey — whether you’re preconceiving, actively trying to conceive, or already pregnant.",
+    bio: "Hi, I’m Abby — a biomedical engineering student, yoga and fitness teacher, and nutrition expert.\n\nI’m passionate about helping women prepare their bodies for pregnancy through detoxification, nourishment, movement, and the right lifestyle habits. My approach supports conception and a healthier pregnancy journey — whether you’re preconceiving, actively trying to conceive, or already pregnant.\n\nI created The Path to Pregnancy to cut through the confusion of modern toxins, ultra-processed foods, and hidden stressors so you can feel confident and empowered on your fertility path.",
     large: false,
   },
   {
     name: "Tom",
     image: tomImg,
-    bio: "BIO",
+    bio: "Hi, I’m Tom.\n\nI’ve spent years supporting women in gently improving their health, reducing stress, and preparing their bodies for conception.\n\nMy approach is calm and supportive, focusing on simple, nourishing habits around food, movement, and daily routine — without adding pressure or overwhelm. Alongside this, I offer a steady space to talk things through, helping you make sense of what you’re experiencing and find a way forward that feels right for you.\n\nTogether, we work to align your actions with your goals in a way that feels natural, manageable, and supportive of both your body and your wellbeing.",
     large: false,
   },
 ];
@@ -36,7 +36,7 @@ export function TeamSection() {
                 className="h-56 w-44 rounded-xl object-cover shadow-md"
               />
               <h3 className="mt-6 text-xl font-bold text-charcoal">{member.name}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
+              <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
             </div>
           ))}
         </div>
