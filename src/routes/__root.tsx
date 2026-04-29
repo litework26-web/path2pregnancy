@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "The Path to Pregnancy" },
+      { name: "twitter:description", content: "A personalized fertility path for conception readiness and pregnancy health." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/86ab94ca-72e6-4d2f-8fa3-cdc5ab4f3c87/id-preview-25b19d9c--09677b0d-ea8b-4ab9-a35f-9ff3b365a7a4.lovable.app-1777492185678.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/86ab94ca-72e6-4d2f-8fa3-cdc5ab4f3c87/id-preview-25b19d9c--09677b0d-ea8b-4ab9-a35f-9ff3b365a7a4.lovable.app-1777492185678.png" },
     ],
     links: [
       {
