@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { AlertTriangle, CheckCircle2, Skull } from "lucide-react";
+import { AlertTriangle, CheckCircle2 } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 const dangerStats = [
   {
-    icon: Skull,
+    icon: null,
     number: "60%",
     title: "Ultra-Processed Foods Slash Your Fertility Odds by ~60%",
     body: "Higher intake of ultra-processed foods is linked to roughly 60% lower odds of fertility in women — even after adjusting for age, weight, and lifestyle.",
@@ -12,7 +12,7 @@ const dangerStats = [
     source: "Source: McMaster University / NHANES, Nutrition and Health, 2026",
   },
   {
-    icon: AlertTriangle,
+    icon: null,
     number: "3x",
     title: "Heavy Metals in Your Blood Triple Infertility Risk",
     body: "Women with higher blood levels of common heavy metals (especially lead and cadmium) face up to 3 times the risk of infertility — even at “normal” exposure levels most people ignore.",
@@ -58,7 +58,6 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
           {dangerStats.map((stat, index) => (
             <div key={stat.title} className="rounded-2xl border border-destructive/25 bg-card p-8 shadow-lg lg:p-10">
               <div className="flex items-center gap-3 text-destructive">
-                <stat.icon className="h-7 w-7" />
                 <span className="text-sm font-bold uppercase tracking-wider">{index + 1}</span>
               </div>
               <p className={`${dramatic ? "text-7xl lg:text-8xl" : "text-6xl lg:text-7xl"} mt-5 font-bold leading-none text-destructive`}>
@@ -73,7 +72,7 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl text-center">
-          <h3 className="text-2xl font-bold text-charcoal lg:text-3xl">✅ The Powerful Good News: Natural Changes Actually Work</h3>
+          <h3 className="text-2xl font-bold text-charcoal lg:text-3xl">The Powerful Good News: Natural Changes Actually Work</h3>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground lg:text-lg">
             Your body can fight back — and our coaching uses exactly the proven steps that reverse these effects.
           </p>
@@ -83,7 +82,6 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
           {hopeStats.map((stat, index) => (
             <div key={stat.title} className="rounded-2xl border border-sage/30 bg-card p-8 shadow-lg lg:p-10">
               <div className="flex items-center gap-3 text-sage">
-                <CheckCircle2 className="h-7 w-7" />
                 <span className="text-sm font-bold uppercase tracking-wider">{index + 1}</span>
               </div>
               <p className={`${dramatic ? "text-6xl lg:text-8xl" : "text-5xl lg:text-7xl"} mt-5 font-bold leading-none text-sage`}>
@@ -107,11 +105,6 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
             <Button asChild variant="cta" size="xl">
               <a href="/#offers">Book Your Free Fertility Assessment Now</a>
             </Button>
-            {!dramatic && (
-              <Button asChild variant="ctaOutline" size="xl">
-                <Link to="/fertility-crisis">See the Full Fertility Crisis Report →</Link>
-              </Button>
-            )}
           </div>
         </div>
       </div>
