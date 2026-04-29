@@ -24,7 +24,7 @@ const offers = [
   {
     title: "90-Day Conception Accelerator",
     price: "Starting from $2,200",
-    priceSub: "Weekly path available from $2,400",
+    priceSub: null,
     description:
       "A structured 90-day fertility reset designed to improve conception readiness through nutrition, supplements, detoxification, cycle timing, and lifestyle optimization.",
     items: [
