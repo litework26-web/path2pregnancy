@@ -1,11 +1,11 @@
-import abbyImg from "@/assets/abby-portrait.jpg";
-import tomImg from "@/assets/tom-portrait.jpg";
+import abbyImg from "@/assets/abby-profile.jpg";
+import tomImg from "@/assets/tom-profile.png";
 
 const team = [
   {
     name: "Abby",
     image: abbyImg,
-    bio: "BIO",
+    bio: "Abby is a biomedical engineering student, yoga and fitness teacher, and nutrition expert focused on helping women prepare their bodies for pregnancy. Her work centers on detoxification, nourishment, movement, and the lifestyle habits that support conception and a healthier pregnancy journey.",
     large: false,
   },
   {
