@@ -5,16 +5,23 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "The Path to Pregnancy — Maximize Your Chances Naturally" },
-      { name: "description", content: "A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness." },
+      {
+        name: "description",
+        content:
+          "A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness.",
+      },
       { property: "og:title", content: "The Path to Pregnancy — Maximize Your Chances Naturally" },
-      { property: "og:description", content: "A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness." },
+      {
+        property: "og:description",
+        content:
+          "A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness.",
+      },
     ],
   }),
 });
 
 import { HeroSection } from "@/components/HeroSection";
 import { StickyHeader } from "@/components/StickyHeader";
-import { UrgencySection } from "@/components/UrgencySection";
 import { WhoSection } from "@/components/WhoSection";
 import { WhatWeAddress } from "@/components/WhatWeAddress";
 import { FertilityCrisisStats } from "@/components/FertilityCrisisStats";
@@ -31,7 +38,6 @@ function Index() {
     <>
       <StickyHeader />
       <HeroSection />
-      <UrgencySection />
       <WhoSection />
       <WhatWeAddress />
       <FertilityCrisisStats />
