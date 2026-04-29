@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
 
 export function HeroSection() {
   return (
@@ -14,7 +13,7 @@ export function HeroSection() {
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button variant="cta" size="xl" asChild>
-                <Link to="/book">Start with the Fertility Clarity Call</Link>
+                <a href="/book">Start with the Fertility Clarity Call</a>
               </Button>
               <Button variant="ctaOutline" size="xl">See How It Works</Button>
             </div>

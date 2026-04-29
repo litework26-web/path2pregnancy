@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
 import { Check, Star } from "lucide-react";
 
 const offers = [
@@ -111,7 +110,7 @@ export function OffersSection() {
                 </p>
               )}
               <Button variant={offer.featured ? "cta" : "cta"} size="xl" className="mt-8 w-full" asChild>
-                <Link to="/book">{offer.cta}</Link>
+                <a href="/book">{offer.cta}</a>
               </Button>
               {offer.ctaNote && (
                 <p className="mt-2 text-center text-xs text-muted-foreground">{offer.ctaNote}</p>

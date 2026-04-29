@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
 
 export function FinalCta() {
   return (
@@ -17,7 +16,7 @@ export function FinalCta() {
           className="mt-8 border-2 border-terracotta-foreground bg-transparent text-terracotta-foreground hover:bg-terracotta-foreground/10 font-semibold"
           asChild
         >
-          <Link to="/book">Book Your Fertility Clarity Call</Link>
+          <a href="/book">Book Your Fertility Clarity Call</a>
         </Button>
       </div>
     </section>
