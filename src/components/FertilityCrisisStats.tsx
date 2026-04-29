@@ -102,6 +102,7 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground lg:text-lg">
             Our natural fertility coaching program uses targeted diet upgrades, toxin elimination strategies (heavy metals, plastics, PFAS), smart exercise, and stress remedies to reverse these modern threats — without drugs or invasive procedures.
           </p>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-charcoal">Take the first step today →</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild variant="cta" size="xl">
               <a href="/#offers">Book Your Free Fertility Assessment Now</a>
