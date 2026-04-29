@@ -10,9 +10,9 @@ export function StickyHeader() {
           <Link to="/" className="hover:text-charcoal transition-colors">Home</Link>
           <Link to="/fertility-crisis" className="hover:text-charcoal transition-colors">The Fertility Crisis</Link>
           <a href="/#how-it-works" className="hover:text-charcoal transition-colors">How It Works</a>
-          <a href="#offers" className="hover:text-charcoal transition-colors">Offers</a>
-          <a href="#team" className="hover:text-charcoal transition-colors">Team</a>
-          <a href="#faq" className="hover:text-charcoal transition-colors">FAQ</a>
+          <a href="/#offers" className="hover:text-charcoal transition-colors">Offers</a>
+          <a href="/#team" className="hover:text-charcoal transition-colors">Team</a>
+          <a href="/#faq" className="hover:text-charcoal transition-colors">FAQ</a>
         </nav>
         <Button variant="cta" size="sm">Book the Baseline Audit</Button>
       </div>
