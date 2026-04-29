@@ -64,7 +64,9 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
               key={stat.title}
               className="rounded-2xl border border-destructive/25 bg-card p-8 shadow-lg lg:p-10"
             >
-              <div className="flex items-center gap-3 text-destructive" />
+              <div className="flex items-center gap-3 text-destructive">
+                <span className="text-sm font-bold uppercase tracking-wider">{"\u200B"}</span>
+              </div>
               <p
                 className={`${dramatic ? "text-7xl lg:text-8xl" : "text-6xl lg:text-7xl"} mt-5 font-bold leading-none text-destructive`}
               >
@@ -100,7 +102,9 @@ export function FertilityCrisisStats({ dramatic = false }: { dramatic?: boolean 
               key={stat.title}
               className="rounded-2xl border border-sage/30 bg-card p-8 shadow-lg lg:p-10"
             >
-              <div className="flex items-center gap-3 text-sage" />
+              <div className="flex items-center gap-3 text-sage">
+                <span className="text-sm font-bold uppercase tracking-wider">{"\n"}</span>
+              </div>
               <p
                 className={`${dramatic ? "text-6xl lg:text-8xl" : "text-5xl lg:text-7xl"} mt-5 font-bold leading-none text-sage`}
               >
