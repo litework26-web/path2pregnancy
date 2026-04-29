@@ -23,7 +23,7 @@ const offers = [
   },
   {
     title: "90-Day Conception Accelerator",
-    price: "Starting from $1,800",
+    price: "Starting from $2,200",
     priceSub: "Weekly path available from $2,400",
     description:
       "A structured 90-day fertility reset designed to improve conception readiness through nutrition, supplements, detoxification, cycle timing, and lifestyle optimization.",
@@ -41,21 +41,23 @@ const offers = [
     featured: false,
   },
   {
-    title: "Concierge Conception Program",
-    price: "6 months from $6,000",
+    title: "7-Day Home Fertility Reset",
+    price: "$4,500 + travel expenses",
     priceSub: null,
     description:
-      "A higher-touch fertility path for women who want closer guidance, priority access, deeper strategy, and support across multiple cycles.",
+      "I come to your home for a full 7 days to completely reset your environment and daily habits for optimal fertility. This is our most transformative experience.",
     items: [
-      "Priority support",
-      "Closer protocol adjustments",
-      "Multi-cycle planning",
-      "Deeper strategy when progress stalls",
-      "Partner and emotional support",
-      "Clear next-step planning",
+      "Deep home detox — we remove hidden plastics, PFAS, heavy metals sources, and ultra-processed food triggers from your kitchen and living spaces",
+      "Full pantry + fridge makeover with fertility-supporting foods",
+      "Hands-on grocery shopping training and label-reading mastery",
+      "Daily personalized movement sessions and meal preparation routines",
+      "Stress-reduction rituals and supportive daily structure",
+      "Complete “Fertility Home Blueprint” so the changes last long after I leave",
     ],
+    footer:
+      "Perfect for women who are ready for fast, deep change and want to see and feel the difference in their own home.\nLimited to 2–3 spots per month.",
     cta: "Book Your Fertility Clarity Call First",
-    ctaNote: "Fertility Clarity Call required before starting",
+    ctaNote: "Fertility Clarity Call required before booking the 7-Day Home Fertility Reset",
     featured: true,
   },
 ];
@@ -97,13 +99,16 @@ export function OffersSection() {
               <ul className="mt-6 flex-1 space-y-3">
                 {offer.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm">
-                    <Check
-                      className={`mt-0.5 h-4 w-4 shrink-0 ${offer.featured ? "text-terracotta" : "text-sage"}`}
-                    />
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
+              {"footer" in offer && offer.footer && (
+                <p className="mt-5 whitespace-pre-line text-sm leading-relaxed text-charcoal">
+                  {offer.footer}
+                </p>
+              )}
               <Button variant={offer.featured ? "cta" : "cta"} size="xl" className="mt-8 w-full">
                 {offer.cta}
               </Button>
