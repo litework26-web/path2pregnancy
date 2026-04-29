@@ -12,7 +12,7 @@ export function StickyHeader() {
           <a href="/#how-it-works" className="hover:text-charcoal transition-colors">How It Works</a>
           <a href="/#offers" className="hover:text-charcoal transition-colors">Offers</a>
           <a href="/#team" className="hover:text-charcoal transition-colors">Team</a>
-          <a href="/#faq" className="hover:text-charcoal transition-colors">FAQ</a>
+          <a href="/#testimonials" className="hover:text-charcoal transition-colors">Testimonials</a>
         </nav>
         <Button variant="cta" size="sm">Book Your Fertility Clarity Call</Button>
       </div>
