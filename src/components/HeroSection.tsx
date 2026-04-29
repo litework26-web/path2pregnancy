@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
 
 export function HeroSection() {
   return (
@@ -12,7 +13,9 @@ export function HeroSection() {
               A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness — for women who are preconceiving, actively trying to conceive, or already pregnant.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Button variant="cta" size="xl">Start with the Fertility Clarity Call</Button>
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/book">Start with the Fertility Clarity Call</Link>
+              </Button>
               <Button variant="ctaOutline" size="xl">See How It Works</Button>
             </div>
         </div>
