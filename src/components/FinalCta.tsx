@@ -14,8 +14,9 @@ export function FinalCta() {
           variant="outline"
           size="xl"
           className="mt-8 border-2 border-terracotta-foreground bg-transparent text-terracotta-foreground hover:bg-terracotta-foreground/10 font-semibold"
+          asChild
         >
-          Book Your Fertility Clarity Call
+          <a href="/book">Book Your Fertility Clarity Call</a>
         </Button>
       </div>
     </section>

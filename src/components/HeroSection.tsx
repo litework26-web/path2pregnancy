@@ -12,7 +12,9 @@ export function HeroSection() {
               A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness — for women who are preconceiving, actively trying to conceive, or already pregnant.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Button variant="cta" size="xl">Start with the Fertility Clarity Call</Button>
+              <Button variant="cta" size="xl" asChild>
+                <a href="/book">Start with the Fertility Clarity Call</a>
+              </Button>
               <Button variant="ctaOutline" size="xl">See How It Works</Button>
             </div>
         </div>
