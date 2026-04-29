@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as FertilityCrisisRouteImport } from './routes/fertility-crisis'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BookRouteImport } from './routes/book'
 import { Route as IndexRouteImport } from './routes/index'
 
 const FertilityCrisisRoute = FertilityCrisisRouteImport.update({
@@ -23,6 +24,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookRoute = BookRouteImport.update({
+  id: '/book',
+  path: '/book',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/contact': typeof ContactRoute
   '/fertility-crisis': typeof FertilityCrisisRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/fertility-crisis'
+  fullPaths: '/' | '/book' | '/contact' | '/fertility-crisis'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/fertility-crisis'
-  id: '__root__' | '/' | '/contact' | '/fertility-crisis'
+  to: '/' | '/book' | '/contact' | '/fertility-crisis'
+  id: '__root__' | '/' | '/book' | '/contact' | '/fertility-crisis'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BookRoute: typeof BookRoute
   ContactRoute: typeof ContactRoute
   FertilityCrisisRoute: typeof FertilityCrisisRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/book': {
+      id: '/book'
+      path: '/book'
+      fullPath: '/book'
+      preLoaderRoute: typeof BookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BookRoute: BookRoute,
   ContactRoute: ContactRoute,
   FertilityCrisisRoute: FertilityCrisisRoute,
 }
