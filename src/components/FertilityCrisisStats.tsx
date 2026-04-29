@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { AlertTriangle, CheckCircle2 } from "lucide-react";
-import { Link } from "@tanstack/react-router";
 
 const dangerStats = [
   {
