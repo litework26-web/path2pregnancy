@@ -1,5 +1,5 @@
 const steps = [
-  { num: "01", title: "Baseline Audit", text: "We assess what may be lowering your chances." },
+  { num: "01", title: "Fertility Clarity Call", text: "We assess what may be lowering your chances." },
   { num: "02", title: "Identify the biggest gaps", text: "We find what needs to change first." },
   { num: "03", title: "Choose the right path", text: "You receive the right level of support for your situation." },
   { num: "04", title: "Follow a structured reset", text: "You move through a clear, personalized process." },
