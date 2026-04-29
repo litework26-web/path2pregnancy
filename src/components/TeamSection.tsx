@@ -1,4 +1,4 @@
-import abbyImg from "@/assets/abby-profile.jpg";
+import abbyImg from "@/assets/abby-profile-new.png";
 import tomImg from "@/assets/tom-profile.png";
 
 const team = [
