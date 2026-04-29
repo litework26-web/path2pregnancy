@@ -66,7 +66,7 @@ export function OffersSection() {
               key={offer.title}
               className={`relative flex flex-col rounded-2xl border p-8 transition-shadow hover:shadow-xl ${
                 offer.featured
-                  ? "border-terracotta/30 bg-rose-accent/10 shadow-xl ring-1 ring-terracotta/20"
+                  ? "border-terracotta/30 bg-rose-accent shadow-xl ring-1 ring-terracotta/20"
                   : "border-border bg-card"
               }`}
             >
