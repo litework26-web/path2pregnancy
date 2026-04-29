@@ -9,7 +9,7 @@ export function HeroSection() {
               Maximize your body's chances of getting pregnant naturally
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              A personalized fertility reset focused on detoxification, nutrition, supplements, lifestyle, and conception readiness.
+              A personalized fertility path focused on detoxification, nutrition, supplements, lifestyle, cycle timing, and conception readiness — for women who are preconceiving, actively trying to conceive, or already pregnant.
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button variant="cta" size="xl">Start with the Baseline Audit</Button>

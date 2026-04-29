@@ -5,7 +5,7 @@ const team = [
   {
     name: "Abby",
     image: abbyImg,
-    bio: "Abby is a biomedical engineering student, yoga and fitness teacher, and nutrition expert focused on helping women prepare their bodies for pregnancy. Her work centers on detoxification, nourishment, movement, and the lifestyle habits that support conception and a healthier pregnancy journey.",
+    bio: "Abby is a biomedical engineering student, yoga and fitness teacher, and nutrition expert focused on helping women prepare their bodies for pregnancy. Her work centers on detoxification, nourishment, movement, and the lifestyle habits that support conception and a healthier pregnancy journey — whether you’re preconceiving, actively trying to conceive, or already pregnant.",
     large: false,
   },
   {

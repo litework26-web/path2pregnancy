@@ -3,7 +3,7 @@ import { Heart, Target, RefreshCw } from "lucide-react";
 const cards = [
   { icon: Heart, title: "Preparing for pregnancy", text: "You want to improve your baseline before trying." },
   { icon: Target, title: "Trying to conceive", text: "You want a more structured, optimized plan." },
-  { icon: RefreshCw, title: "Need a health reset first", text: "You know your current habits or environment need work." },
+  { icon: RefreshCw, title: "Already pregnant", text: "You want to optimize your health and pregnancy journey (no matter if you are using medications or other treatments)." },
 ];
 
 export function WhoSection() {
