@@ -43,9 +43,9 @@ function Index() {
       <FertilityCrisisStats />
       <HowItWorks />
       <OffersSection />
+      <TestimonialsSection />
       <TeamSection />
       <WhyItWorks />
-      <TestimonialsSection />
       <FinalCta />
       <FooterDisclaimer />
     </>
